@@ -13,7 +13,7 @@ describe port(80) do
   it { should be_listening }
 end
 
-describe file('/srv/static/static.conf') do
+describe file('/etc/apache2/apache2.conf') do
   it { should be_file }
   #it { should contain "ServerName jenkingrant" }
 end
